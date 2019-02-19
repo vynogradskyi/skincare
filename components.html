@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
+        type="text/javascript"></script>
+    <script src="./index.js" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p class="text bold white">Components</p>
+    </header>
+    <div id="container">
+        <div>
+            <div class="skincare_row">
+                <a href="./index.html">Go Back</a>
+
+            </div>
+            <div class="skincare_row">
+                <div class="tabs_component">
+                    <ul class="nav nav-tabs" id="myTabs">
+                        <li class="active text"><a href="#state1" id="state1-tab" data-toggle="tab">State1</a></li>
+                        <li><a href="#state2" class="text" id="state2-tab" data-toggle="tab">State2</a></li>
+                        <li><a href="#state3" class="text" id="state3-tab" data-toggle="tab">State3</a></li>
+                        <li class="nav-underline"></li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade in active" id="state1">
+                            <img src="./img/rodinka.jpg" class="main_image" alt="Users Example">
+                        </div>
+                        <div class="tab-pane fade" id="state2">
+                            <img src="./img/rodinka2.jpg" class="main_image" alt="Users Example">
+                        </div>
+                        <div class="tab-pane fade" id="state3">
+                            <img src="./img/rodinka3.jpg" class="main_image" alt="Users Example">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skincare_row">
+                <p class="text">Take a photo of your skin spot and receive an instant risk indication.</p>
+            </div>
+            <div class="skincare_row">
+                <img src="./img/photoCamera.png" class="image"
+                    srcset="./img/photoCamera@3x.png 721px" alt="skincare welcome image" />
+            </div>
+
+            <div class="skincare_row">
+                <input type="button" class="button grey" value="Try again">
+                <input type="button" class="button blue" value="Process image">
+            </div>
+
+            <div class="skincare_row">
+                <p class="text error">An error occurred during processing</p>
+            </div>
+
+            <div class="skincare_row">
+                <img src="./img/load2.gif" class="image" alt="Loading. Please wait.">
+            </div>
+
+            <div class="skincare_row">
+                <img src="./img/rodinka.jpg" class="main_image" alt="Users Example">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="skincare_row">
+            <input type="button" id="takePhoto" class="button blue" value="Take a photo" />
+        </div>
+    </footer>
+
+</body>
+
+</html>
