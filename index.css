@@ -114,17 +114,11 @@ footer {
 }
 
 .button.blue {
-    background-image: -webkit-linear-gradient(to right, #1976d2, #00acea);
-    background-image: -moz-linear-gradient(to right, #1976d2, #00acea);
-    background-image: -o-linear-gradient(to right, #1976d2, #00acea);
-    background-image: linear-gradient(to right, #1976d2, #00acea);
+    background-color: #00acea;
 }
 
 .button.grey {
-    background-image: -webkit-linear-gradient(to right, #8c8c8c, #c4c4c4);
-    background-image: -moz-linear-gradient(to right, #8c8c8c, #c4c4c4);
-    background-image: -o-linear-gradient(to right, #8c8c8c, #c4c4c4);
-    background-image: linear-gradient(to right, #8c8c8c, #c4c4c4);
+    background-color: #c4c4c4;
 }
 
 /* Button End */
@@ -200,3 +194,22 @@ footer {
 }
 
 /* Tabs End */
+
+/* Image With Gradient Bar Start*/
+.image_with_bar{
+    display: flex;
+    flex-direction: row;
+}
+
+.image_with_bar .image_container{
+    flex-grow: 1;
+}
+.image_with_bar .gradient_bar{
+    width: 20px;
+    /* margin-left: 10px; */
+    background-image: -webkit-linear-gradient(to bottom,red, yellow, green);
+    background-image: -moz-linear-gradient(to bottom,red, yellow, green);
+    background-image: -o-linear-gradient(to bottom,red, yellow, green);
+    background-image: linear-gradient(to bottom,red, yellow, green);
+}
+/* Image With Gradient Bar End*/
