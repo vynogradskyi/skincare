@@ -85,12 +85,10 @@ footer {
         width: 80%;
         margin: auto;
     }
-
-    header{
+    header {
         height: 60px;
     }
-
-    footer .skincare_row{
+    footer .skincare_row {
         justify-content: flex-end;
         padding-right: 20px;
     }
@@ -196,20 +194,33 @@ footer {
 /* Tabs End */
 
 /* Image With Gradient Bar Start*/
-.image_with_bar{
+
+.image_with_bar {
     display: flex;
     flex-direction: row;
 }
 
-.image_with_bar .image_container{
+.image_with_bar .image_container {
     flex-grow: 1;
 }
-.image_with_bar .gradient_bar{
+
+.image_with_bar .gradient_bar {
     width: 20px;
+    position: relative;
     /* margin-left: 10px; */
-    background-image: -webkit-linear-gradient(to bottom,red, yellow, green);
-    background-image: -moz-linear-gradient(to bottom,red, yellow, green);
-    background-image: -o-linear-gradient(to bottom,red, yellow, green);
-    background-image: linear-gradient(to bottom,red, yellow, green);
+    background-image: -webkit-linear-gradient(to bottom, red, yellow, green);
+    background-image: -moz-linear-gradient(to bottom, red, yellow, green);
+    background-image: -o-linear-gradient(to bottom, red, yellow, green);
+    background-image: linear-gradient(to bottom, red, yellow, green);
 }
+
+.image_with_bar .gradient_bar .pointer {
+    width: 100%;
+    padding-top: 100%;
+    position: absolute;
+    bottom: 33%;
+    border-radius: 50%;
+    background-color: #555;
+}
+
 /* Image With Gradient Bar End*/
